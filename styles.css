@@ -9,6 +9,22 @@
     to{color: white;}
 }
 
+/* Change color scheme up here, main colors are: (#0D0221, #0F084B, #26408B, #A6CFD5, #C2E7D9) */
+:root {
+    --primary-gradient-start: #0D0221;
+    --primary-gradient-end: #C2E7D9;
+    --container-bg-color: #C2E7D9;
+    --navbar-bg-color: rgb(26, 25, 25);
+    --navbar-hover-bg-color: rgb(196, 194, 194);
+    --dropdown-bg-color: #f9f9f9;
+    --dropdown-hover-bg-color: #f1f1f1;
+    --text-color: white;
+    --link-color: white;
+    --back-to-top-btn-bg-color: #26408B;
+    --back-to-top-btn-hover-bg-color: #A6CFD5;
+    --footer-color: #C2E7D9;
+    --footer-bg-color: #0D0221;
+}
 
 body{
     background-image: linear-gradient(#0D0221, #0F084B, #26408B, #A6CFD5, #C2E7D9);
@@ -20,7 +36,7 @@ body{
 .container{ 
     margin: 0 auto;
     padding: 20px;
-    background-color: #C2E7D9;
+    background-color: var(--container-bg-color);
 }
 
 header{
@@ -42,7 +58,7 @@ header{
 ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: rgb(26, 25, 25);
+    background-color:var(--navbar-bg-color);
     top: 0;
     width: 100%;
     margin: 0;
@@ -61,14 +77,14 @@ li {
   
 li a, .dropbtn {
     display: block;
-    color: white;
+    color: var(--link-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
   
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(196, 194, 194);
+    background-color:var(--navbar-hover-bg-color);
 }
   
 li.dropdown {
@@ -78,7 +94,7 @@ li.dropdown {
     .dropdown-content {
     display: none;
     position: fixed;
-    background-color: #f9f9f9;
+    background-color: var(--dropdown-bg-color);
     min-width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -92,7 +108,7 @@ li.dropdown {
     text-align: left;
     }
   
-    .dropdown-content a:hover {background-color: #f1f1f1;}
+    .dropdown-content a:hover {background-color: var(--dropdown-hover-bg-color);}
   
     .dropdown:hover .dropdown-content {
     display: block;
@@ -103,12 +119,12 @@ div {
     }
 
     .container{
-    background-color: #C2E7D9;
+    background-color: var(--container-bg-color);
     }
 
 
     .hero-content{
-        color: white;
+        color: var(--text-color);
         position: absolute;
         top: 50%;
         left: 10%;
@@ -151,21 +167,21 @@ div {
         z-index: 99; /* Ensures it's above most other elements */
         border: none; /* Removes the border */
         outline: none; /* Removes the outline */
-        background-color: #26408B; /* Background color */
-        color: white; /* Text color */
+        background-color: var(--back-to-top-btn-bg-color);
+        color: var(--text-color); /* Text color */
         cursor: pointer; /* Cursor changes to a pointer */
         padding: 10px; /* Padding inside the button */
         border-radius: 5px; /* Rounded corners */
     }
     
     #backToTopBtn:hover {
-        background-color: #A6CFD5; /* Darker shade on hover */
+        background-color: var(--back-to-top-btn-hover-bg-color); /* Darker shade on hover */
     }
     
 
     footer{
-        color: #C2E7D9;
-        background-color:#0D0221;
+        color: var(--footer-color);
+        background-color: var(--footer-bg-color);
         margin: 0;
         padding: 0;
         height: 200px;

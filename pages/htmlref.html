@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Referenz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>HTML-Cheatsheet</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Start</a>
+        <a href="jokes.html">Witze</a>
+        <a href="module.html">Module</a>
+        <a href="games.html">Games</a>
+    </nav>
+
+    <article>
+        <h2>Wie ist ein HTML Code aufgebaut?</h2>
+        <p>Nachfolgend ist das HTML-Grundgerüst dargestellt:</p>
+        <pre>&lt;!DOCTYPE html&gt; <i>(Damit wird angegeben um was für ein Typ von Dokument es sich handelt)</i>
+        &lt;html lang=&quot;en&quot;&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Document&lt;/title&gt; <i>(Was wird im geöffneten Tab oben angegeben)</i>
+        &lt;/head&gt;
+        &lt;body&gt; <i>(Im Body wird die Struktur der Webseite gemacht)</i>
+
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </pre>
+    </article>
+    <article>
+        <h1>Überschriften werden mit &lt;h1&gt; dargestellt </h1>
+        <p>Paragrafen werden mit &lt;p&gt; dargestellt </p>
+        <p>Abschnitte werden mit Hilfe von &lt;article&gt; dargestellt</p>
+        <p>&lt;!-- Mit diesen Zeichen wird ein Kommentar im HTML dargestellt --&gt;</p>
+    </article>
+
+    <article>
+        <h2>Verschiedene Farben und Schriftarten definieren</h2>
+        <p>Farben und Schriftarten werden generell in einem eigenen Ordner und CSS file angelegt und abgespeichert.</p>
+        <pre>
+            body{
+                color : white;
+                background-color: #696969;
+            }
+            nav{
+                color: yellow;
+            }
+            p{
+                color: green;
+            }
+            a{
+                color: inherit
+            }
+        </pre>
+    </article>
+
+    <article>
+        <h2>SelfHTML</h2>
+        <p>SelfHTML hilft dir dabei HTML zu lernen <a href="https://wiki.selfhtml.org/wiki/SELFHTML">SelfHTML.org</a></p>
+    </article>
+    <article>
+        <h2>W3-Schools</h2>
+        <p>Learning how to code with: <a href="https://www.w3schools.com/">w3schools.com</a></p>
+    </article>
+
+    <img src="../smiley.gif" alt="smiley">
+</body>
+</html>
